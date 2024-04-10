@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const CardSection = () => {
   return (
@@ -10,7 +11,7 @@ const CardSection = () => {
         </div>
         <div className="flex flex-wrap -m-4">
           <div className="p-4 md:w-1/2">
-            <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col hover:bg-green-200 cursor-pointer">
+            <NavLink to="/academyhome" className="flex rounded-lg h-full bg-gray-100 p-8 flex-col hover:bg-green-200 cursor-pointer">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full bg-green-500 text-white flex-shrink-0 ">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
@@ -62,10 +63,10 @@ const CardSection = () => {
   
 </div>
 
-            </div>
+            </NavLink>
           </div>
           <div className="p-4 md:w-1/2">
-            <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col hover:bg-green-100 cursor-pointer">
+            <NavLink to="/softwarehome" className="flex rounded-lg h-full bg-gray-100 p-8 flex-col hover:bg-green-100 cursor-pointer">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full bg-green-500 text-white flex-shrink-0">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
@@ -115,7 +116,7 @@ const CardSection = () => {
 
 </div>
 
-            </div>
+            </NavLink>
           </div>
           
         </div>

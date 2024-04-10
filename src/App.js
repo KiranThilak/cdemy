@@ -2,10 +2,12 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
-import AcademyHome from './pages/AcademyHome'; // Import AcademyHome component
+import AcademyHome from './pages/AcademyHome'; 
 import SoftwareHome from './pages/SoftwareHome'; 
-import CdemyHome from './pages/CdemyHome'; // Import AcademyHome component
+import CdemyHome from './pages/CdemyHome';
 import Footer from "./components/Footer";
+import PartnerLinkPage from './pages/PartnerLinkPage';
+import RetrainingPage from './pages/RetrainingPage';
 
 
 function App() {
@@ -17,7 +19,9 @@ function App() {
           <Route path="/academyhome" element={<AcademyHome />} />
           <Route path="/softwarehome" element={<SoftwareHome />} />
           <Route path="/cdemyhome" element={<CdemyHome />} />
-          {/* Add more routes here */}
+          <Route path="/partnerlinkpage" element={<PartnerLinkPage />} />
+          <Route path="/retrainingpage" element={<RetrainingPage />} />
+          
         </Routes>
         
         <Footer />

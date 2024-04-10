@@ -27,7 +27,7 @@ const AcademyNavLinks = ({ isOpen }) => {
             <div className={`nav-links duration-500 md:static md:min-h-fit min-h-[60vh] left-0 ${isOpen ? 'top-[9%]' : 'top-[-100%]'} md:w-auto w-full flex items-center px-5`}>
                 <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-10 space-x-2">
                     {/* Dropdown for Home */}
-                    <NavLink to="/academyhome" className="relative" onMouseEnter={() => openDropdown("home")} onMouseLeave={() => closeDropdown("home")}>
+                    <NavLink to="/academyhome" >
                         <AcademyDropdown
                             dropdownName="home"
                             isOpen={dropdownStates.home}
@@ -35,10 +35,11 @@ const AcademyNavLinks = ({ isOpen }) => {
                             closeDropdown={closeDropdown}
                         >
                             {/* Different content for Home dropdown */}
-                            <NavLink to="/someotherpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Some Other Page</NavLink>
+                            <NavLink to="/partnerlinkpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Partners & links</NavLink>
                         </AcademyDropdown>
                     </NavLink>
                     {/* Dropdown for Retraining */}
+                    <NavLink to="/retrainingpage" >
                     <AcademyDropdown
                         dropdownName="retraining"
                         isOpen={dropdownStates.retraining}
@@ -46,10 +47,29 @@ const AcademyNavLinks = ({ isOpen }) => {
                         closeDropdown={closeDropdown}
                     >
                         {/* Different content for Retraining dropdown */}
-                        <a href="#" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 3</a>
-                        <a href="#" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 4</a>
+                        <NavLink to="/itspecialistpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">IT specialist: in application development</NavLink>
+                        <NavLink to="/retrainingfaqpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Retraining FAQ</NavLink>
+                        <NavLink to="/selectionprocesspage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Selection process for retraining</NavLink>
+                        <NavLink to="/glidetimecontrolpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Glide time control</NavLink>
+                        <NavLink to="/internationalitypage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Internationality in retraining</NavLink>
+                        <NavLink to="/philosophypage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Programming Philosophy</NavLink>
+                        <NavLink to="/orientationpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Project orientation</NavLink>
                     </AcademyDropdown>
-                    {/* Dropdown for Blog */}
+                    </NavLink>
+                    {/* Dropdown for Offers */}
+                    <NavLink to="/offerspage" >
+                    <AcademyDropdown
+                        dropdownName="offers"
+                        isOpen={dropdownStates.offers}
+                        openDropdown={openDropdown}
+                        closeDropdown={closeDropdown}
+                    >
+                        {/* Different content for offers dropdown */}
+                        <NavLink to="/externalexaminationpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">External examination for IT specialists</NavLink>
+                        <NavLink to="/glossarypage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Glossary</NavLink>
+                    </AcademyDropdown>
+                    </NavLink>
+                    <NavLink to="/academyblog" >
                     <AcademyDropdown
                         dropdownName="blog"
                         isOpen={dropdownStates.blog}
@@ -57,9 +77,10 @@ const AcademyNavLinks = ({ isOpen }) => {
                         closeDropdown={closeDropdown}
                     >
                         {/* Different content for Blog dropdown */}
-                        <a href="#" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 5</a>
-                        <a href="#" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 6</a>
+                       {/*  <NavLink to="" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 5</NavLink>
+                        <NavLink to="" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 6</NavLink> */}
                     </AcademyDropdown>
+                    </NavLink>
 
                     {/* Add other AcademyDropdowns here */}
                 </div>
