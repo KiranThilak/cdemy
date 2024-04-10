@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardSection = () => {
   return (
-    <section className="text-gray-600 body-font ">
+    <section className="text-gray-600 font-sans ">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h2 className="text-xs text-green-500 tracking-widest font-medium title-font mb-1">Services</h2>
@@ -10,7 +10,7 @@ const CardSection = () => {
         </div>
         <div className="flex flex-wrap -m-4">
           <div className="p-4 md:w-1/2">
-            <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col hover:bg-green-100 cursor-pointer">
+            <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col hover:bg-green-200 cursor-pointer">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full bg-green-500 text-white flex-shrink-0 ">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
