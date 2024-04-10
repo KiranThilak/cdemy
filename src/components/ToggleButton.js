@@ -1,10 +1,11 @@
 // ToggleButton.js
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const ToggleButton = ({ handleButtonClick, activeButton }) => {
   return (
     <div className="bg-blue-200 p-1 rounded-full inline-block">
-      <button
+        <NavLink to="/academyhome"><button
         className={`${
           activeButton === "Code Academy" ? "bg-blue-500 text-white " : "text-black"
         } px-4 py-2 rounded-full mr-2 `}
@@ -12,6 +13,8 @@ const ToggleButton = ({ handleButtonClick, activeButton }) => {
       >
         Code Academy
       </button>
+      </NavLink>
+      <NavLink to="/softwarehome">
       <button
         className={`${
           activeButton === "Software Development" ? "bg-blue-500 text-white" : "text-black"
@@ -20,6 +23,7 @@ const ToggleButton = ({ handleButtonClick, activeButton }) => {
       >
         Software Development
       </button>
+      </NavLink>
     </div>
   );
 };

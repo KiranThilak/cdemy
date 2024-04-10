@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ToggleButton from "./ToggleButton";
 import AcademyNavLinks from "./AcademyNavLinks";
 import SoftwareNavLinks from "./SoftwareNavLinks";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +22,9 @@ const Navbar = () => {
             <div className="flex justify-between items-center w-92 mx-auto px-4">
                 <div className='px-4'>
                     <h1 className="text-6xl  font-bold text-black text-left pb-3 ">
-                        <span className="text-3xl  font-bold text-left pb-5 bg-green-500 bg-clip-text text-transparent ">
+                        <NavLink to="/cdemyhome" className="text-3xl  font-bold text-left pb-5 bg-green-500 bg-clip-text text-transparent ">
                             Cdemy
-                        </span>
+                        </NavLink>
                     </h1>
                 </div>
                 <ToggleButton handleButtonClick={handleButtonClick} activeButton={activeButton} />

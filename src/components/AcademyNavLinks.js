@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom'; // Import NavLink component from react-router-dom
 
 const AcademyNavLinks = ({ isOpen }) => {
     const [dropdownStates, setDropdownStates] = useState({
@@ -26,16 +27,17 @@ const AcademyNavLinks = ({ isOpen }) => {
             <div className={`nav-links duration-500 md:static md:min-h-fit min-h-[60vh] left-0 ${isOpen ? 'top-[9%]' : 'top-[-100%]'} md:w-auto w-full flex items-center px-5`}>
                 <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-10 space-x-2">
                     {/* Dropdown for Home */}
-                    <AcademyDropdown
-                        dropdownName="home"
-                        isOpen={dropdownStates.home}
-                        openDropdown={openDropdown}
-                        closeDropdown={closeDropdown}
-                    >
-                        {/* Different content for Home dropdown */}
-                        <a href="#" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 1</a>
-                        <a href="#" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 2</a>
-                    </AcademyDropdown>
+                    <NavLink to="/academyhome" className="relative" onMouseEnter={() => openDropdown("home")} onMouseLeave={() => closeDropdown("home")}>
+                        <AcademyDropdown
+                            dropdownName="home"
+                            isOpen={dropdownStates.home}
+                            openDropdown={openDropdown}
+                            closeDropdown={closeDropdown}
+                        >
+                            {/* Different content for Home dropdown */}
+                            <NavLink to="/someotherpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Some Other Page</NavLink>
+                        </AcademyDropdown>
+                    </NavLink>
                     {/* Dropdown for Retraining */}
                     <AcademyDropdown
                         dropdownName="retraining"
@@ -100,6 +102,8 @@ const AcademyDropdown = ({ dropdownName, isOpen, openDropdown, closeDropdown, ch
 };
 
 export default AcademyNavLinks;
+
+
 
 
 
