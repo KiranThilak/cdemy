@@ -8,6 +8,11 @@ import CdemyHome from './pages/CdemyHome';
 import Footer from "./components/Footer";
 import PartnerLinkPage from './pages/PartnerLinkPage';
 import RetrainingPage from './pages/RetrainingPage';
+import ItspecialistPage from './pages/ItspecialistPage';
+import RetrainingFaqPage from './pages/RetrainingFaqPage';
+import SelectionProcessPage from './pages/SelectionProcessPage';
+import GlidetimeControlPage from './pages/GlidetimeControlPage';
+import ContactPage from './pages/ContactPage';
 
 
 function App() {
@@ -21,6 +26,11 @@ function App() {
           <Route path="/cdemyhome" element={<CdemyHome />} />
           <Route path="/partnerlinkpage" element={<PartnerLinkPage />} />
           <Route path="/retrainingpage" element={<RetrainingPage />} />
+          <Route path="/itspecialistpage" element={<ItspecialistPage />} />
+          <Route path="/retrainingfaqpage" element={<RetrainingFaqPage />} />
+          <Route path="/selectionprocesspage" element={<SelectionProcessPage />} />
+          <Route path="/glidetimecontrolpage" element={<GlidetimeControlPage />} />
+          <Route path="/contactpage" element={<ContactPage />} />
           
         </Routes>
         

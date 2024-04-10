@@ -29,10 +29,10 @@ const Navbar = () => {
                 </div>
                 <ToggleButton handleButtonClick={handleButtonClick} activeButton={activeButton} />
                 <div className="flex items-center mt-2 mr-2 ">
-                    <button className="relative middle none center uppercase font-sans text-sm px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-600  text-white shadow-lg hover:shadow-xl hover:shadow-blue-600/40 focus:shadow-outline focus:outline-none active:top-[2px] active:shadow-none disabled:pointer-events-none disabled:opacity-50" onClick={onToggleMenu}>
+                    <NavLink to="/contactpage" className="relative middle none center uppercase font-sans text-sm px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-600  text-white shadow-lg hover:shadow-xl hover:shadow-blue-600/40 focus:shadow-outline focus:outline-none active:top-[2px] active:shadow-none disabled:pointer-events-none disabled:opacity-50" onClick={onToggleMenu}>
                         <span className="absolute top-0 right-0 bottom-0 left-0 w-full h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-300 opacity-75"></span>
                         <span className="relative">Contact</span>
-                    </button>
+                    </NavLink>
                     <span onClick={onToggleMenu} className="text-3xl cursor-pointer md:hidden">{isOpen ? '✖' : '☰'}</span>
                 </div>
             </div>
