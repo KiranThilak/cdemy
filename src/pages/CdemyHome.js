@@ -3,6 +3,7 @@ import cdemy_home from '../assets/images/cdemy_home_5.jpg';
 import LottieAnimation from '../assets/animation/LottieAnimation';
 import codeacademy_animation from '../assets/animation/codeacademy_animation.json';
 import software_animation from '../assets/animation/software_animation.json';
+import { NavLink } from 'react-router-dom';
 
 const CdemyHome = () => {
     return (
@@ -56,7 +57,7 @@ const CdemyHome = () => {
 
                     <div className="flex justify-center">
                         <div className="flex flex-wrap">
-                            <div className="w-full md:w-1/2 lg:w-1/2 px-4">
+                            <NavLink to="/academyhome" className="w-full md:w-1/2 lg:w-1/2 px-4 cursor-pointer">
                                 <div className="mb-10 rounded-xl border-2 border-stroke hover:bg-blue-100 hover:border-indigo-300 bg-white px-8 py-10 shadow-pricing border-indigo-100 sm:p-12 lg:px-6 lg:py-10 xl:p-50px">
                                 <LottieAnimation animationData={codeacademy_animation} />
                                     <span className="block text-lg font-semibold text-primary text-green-600 mb-3">Retraining</span>
@@ -91,15 +92,15 @@ const CdemyHome = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <a
-                                        href="/#"
-                                        className="block w-full bg-indigo-900 text-white hover:shadow-indigo-600/40 focus:shadow-outline rounded-md border p-3 text-center text-base font-medium transition"
+                                    <NavLink
+                                        to="/academyhome"
+                                        className="block w-full bg-indigo-900 hover:bg-indigo-700 text-white hover:shadow-indigo-600/40 focus:shadow-outline rounded-md border p-3 text-center text-base font-medium transition"
                                     >
                                         Code Academy
-                                    </a>
+                                    </NavLink>
                                 </div>
-                            </div>
-                            <div className="w-full md:w-1/2 lg:w-1/2 px-4">
+                            </NavLink>
+                            <NavLink to="/softwarehome" className="w-full md:w-1/2 lg:w-1/2 px-4 cursor-pointer">
                                 <div className="mb-10 rounded-xl border-2 border-stroke hover:bg-blue-100 hover:border-indigo-300 bg-white px-8 py-10 shadow-pricing border-indigo-100 sm:p-12 lg:px-6 lg:py-10 xl:p-50px">
                                 <LottieAnimation animationData={software_animation} />
                                     <span className="block text-lg font-semibold text-primary text-green-600 mb-3">Software</span>
@@ -138,14 +139,14 @@ const CdemyHome = () => {
                                         </div>
                                    
                                     </div>
-                                    <a
-                                        href="/#"
-                                        className="block w-full bg-indigo-900 text-white hover:shadow-indigo-600/40 focus:shadow-outline rounded-md border p-3 text-center text-base font-medium transition"
+                                    <NavLink 
+                                       to="/softwarehome"
+                                        className="block w-full bg-indigo-900 text-white  hover:bg-indigo-700 hover:shadow-indigo-600/40 focus:shadow-outline rounded-md border p-3 text-center text-base font-medium transition"
                                     >
                                         Software Development
-                                    </a>
+                                    </NavLink>
                                 </div>
-                            </div>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
