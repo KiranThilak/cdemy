@@ -23,7 +23,7 @@ const AcademyNavLinks = ({ isOpen }) => {
     };
 
     return (
-        <div className="flex justify-center py-5 "> 
+        <div className="flex justify-center py-5"> 
             <div className={`nav-links duration-500 md:static md:min-h-fit min-h-[60vh] left-0 ${isOpen ? 'top-[9%]' : 'top-[-100%]'} md:w-auto w-full flex items-center px-5`}>
                 <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-10 space-x-2">
                     {/* Dropdown for Home */}

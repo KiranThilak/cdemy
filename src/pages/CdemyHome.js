@@ -62,7 +62,7 @@ const CdemyHome = () => {
                                 <LottieAnimation animationData={codeacademy_animation} />
                                     <span className="block text-lg font-semibold text-primary text-green-600 mb-3">Retraining</span>
                                     <h2 className="text-[30px] font-bold text-indigo-900 mb-5">Code Academy</h2>
-                                    <p className="pb-8 border-b border-stroke text-base text-body-color dark:border-blue-100 dark:text-dark-6">Code- und Projektorientierte Ausbildungen & Weiterbildungen:</p>
+                                    <p className="pb-8 border-b border-stroke text-base text-body-color dark:border-indigo-300 dark:text-dark-6">Code- und Projektorientierte Ausbildungen & Weiterbildungen:</p>
                                     <div className="mb-9 flex flex-col gap-[14px]">
                                         <div className="p-2 w-full">
                                             <div className="rounded flex p-2 h-full items-center">
@@ -105,7 +105,7 @@ const CdemyHome = () => {
                                 <LottieAnimation animationData={software_animation} />
                                     <span className="block text-lg font-semibold text-primary text-green-600 mb-3">Software</span>
                                     <h2 className="text-[30px] font-bold text-indigo-900 mb-5">Software Development</h2>
-                                    <p className="pb-8 border-b border-stroke text-base text-body-color dark:border-blue-100 dark:text-dark-6">App Development for all screens: </p>
+                                    <p className="pb-8 border-b border-stroke text-base text-body-color dark:border-indigo-300 dark:text-dark-6">App Development for all screens: </p>
                                     <p>&nbsp;</p>
                                     <p>&nbsp;</p>
                                     <div className="mb-9 flex flex-col gap-[14px]">
