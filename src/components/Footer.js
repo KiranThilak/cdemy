@@ -134,7 +134,7 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
               <div>
-                <p className="font-medium">Company</p>
+                <p className="font-semibold text-indigo-900">Company</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                   <span className="hover:opacity-75" /* href */>About</span>
   
@@ -142,7 +142,7 @@ const Footer = () => {
                 </nav>
               </div>
               <div>
-                <p className="font-medium">Services</p>
+                <p className="font-semibold text-indigo-900">Services</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                   <span className="hover:opacity-75" /* href */>
                     Flutter Development
@@ -153,7 +153,7 @@ const Footer = () => {
                 </nav>
               </div>
               <div>
-                <p className="font-medium">Helpful Links</p>
+                <p className="font-semibold text-indigo-900 ">Helpful Links</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                   <span className="hover:opacity-75" /* href */>Contact</span>
                   <span className="hover:opacity-75" /* href */>FAQs</span>
@@ -163,7 +163,7 @@ const Footer = () => {
                 </nav>
               </div>
               <div>
-                <p className="font-medium">Legal</p>
+                <p className="font-semibold text-indigo-900">Legal</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                   <span className="hover:opacity-75" /* href */>
                     Privacy Policy

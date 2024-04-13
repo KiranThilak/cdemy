@@ -35,7 +35,7 @@ const AcademyNavLinks = ({ isOpen }) => {
                             closeDropdown={closeDropdown}
                         >
                             {/* Different content for Home dropdown */}
-                            <NavLink to="/partnerlinkpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Partners & links</NavLink>
+                            <NavLink to="/partnerlinkpage" className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Partners & links</NavLink>
                         </AcademyDropdown>
                     </NavLink>
                     {/* Dropdown for Retraining */}
@@ -47,13 +47,13 @@ const AcademyNavLinks = ({ isOpen }) => {
                         closeDropdown={closeDropdown}
                     >
                         {/* Different content for Retraining dropdown */}
-                        <NavLink to="/itspecialistpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">IT specialist: in application development</NavLink>
-                        <NavLink to="/retrainingfaqpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Retraining FAQ</NavLink>
-                        <NavLink to="/selectionprocesspage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Selection process for retraining</NavLink>
-                        <NavLink to="/glidetimecontrolpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Glide time control</NavLink>
-                        <NavLink to="/internationalitypage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Internationality in retraining</NavLink>
-                        <NavLink to="/philosophypage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Programming Philosophy</NavLink>
-                        <NavLink to="/orientationpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Project orientation</NavLink>
+                        <NavLink to="/itspecialistpage" className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">IT specialist: in application development</NavLink>
+                        <NavLink to="/retrainingfaqpage" className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Retraining FAQ</NavLink>
+                        <NavLink to="/selectionprocesspage" className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Selection process for retraining</NavLink>
+                        <NavLink to="/glidetimecontrolpage" className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Glide time control</NavLink>
+                        <NavLink to="/internationalitypage" className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Internationality in retraining</NavLink>
+                        <NavLink to="/philosophypage" className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Programming Philosophy</NavLink>
+                        <NavLink to="/orientationpage" className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Project orientation</NavLink>
                     </AcademyDropdown>
                     </NavLink>
                     {/* Dropdown for Offers */}
@@ -65,8 +65,8 @@ const AcademyNavLinks = ({ isOpen }) => {
                         closeDropdown={closeDropdown}
                     >
                         {/* Different content for offers dropdown */}
-                        <NavLink to="/externalexaminationpage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">External examination for IT specialists</NavLink>
-                        <NavLink to="/glossarypage" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Glossary</NavLink>
+                        <NavLink to="/externalexaminationpage" className="block px-4 py-2 text-black hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">External examination for IT specialists</NavLink>
+                        <NavLink to="/glossarypage" className="block px-4 py-2 text-black hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Glossary</NavLink>
                     </AcademyDropdown>
                     </NavLink>
                     <NavLink to="/academyblog" >
@@ -94,7 +94,7 @@ const AcademyDropdown = ({ dropdownName, isOpen, openDropdown, closeDropdown, ch
         <div className="relative" onMouseEnter={() => openDropdown(dropdownName)} onMouseLeave={() => closeDropdown(dropdownName)}>
             <button
                 id={`dropdown-button-${dropdownName}`}
-                className={`inline-flex justify-center w-full px-3 py-2 uppercase text-sm text-black bg-white rounded-md hover:bg-green-600 hover:text-white ${isOpen ? 'active:bg-green-600 active:text-white' : ''}`}
+                className={` inline-flex justify-center w-full px-3 py-2 uppercase font-semibold text-sm text-indigo-900 bg-white rounded-md hover:bg-indigo-900 hover:text-white ${isOpen ? 'active:bg-green-600 active:text-white' : ''}`}
             >
                 <span className="mr-2">{dropdownName}</span> {/* Display dropdown name */}
                 <svg

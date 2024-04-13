@@ -18,12 +18,13 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <Router>
-      <div>
+      <div className='font-roboto'>
         <Navbar />
         <Routes>
+        <Route path="*" element={<CdemyHome />} />
+
           <Route path="/academyhome" element={<AcademyHome />} />
           <Route path="/softwarehome" element={<SoftwareHome />} />
-          <Route path="/cdemyhome" element={<CdemyHome />} />
           <Route path="/partnerlinkpage" element={<PartnerLinkPage />} />
           <Route path="/retrainingpage" element={<RetrainingPage />} />
           <Route path="/itspecialistpage" element={<ItspecialistPage />} />
