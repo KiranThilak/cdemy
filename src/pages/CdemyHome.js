@@ -63,7 +63,7 @@ const CdemyHome = () => {
                                 <LottieAnimation
   animationData={codeacademy_animation}
   width={300} 
-  height={250}
+  height={300}
 
 /></div>
 
@@ -112,7 +112,7 @@ const CdemyHome = () => {
                                 <div className="mb-10 rounded-xl border-2 border-stroke hover:bg-blue-100 hover:border-indigo-300 bg-white px-8 py-10 shadow-pricing border-indigo-100 sm:p-12 lg:px-6 lg:py-10 xl:p-50px">
                                 <div className="flex justify-center"> 
                                 <LottieAnimation animationData={software_animation}   width={300} 
-  height={250} />    </div>
+  height={300} />    </div>
                                     <span className="block text-lg font-semibold text-primary text-green-600 mb-3">Software</span>
                                     <h2 className="text-[30px] font-bold text-indigo-900 mb-5">Software Development</h2>
                                     <p className="pb-8 border-b border-stroke text-base text-body-color dark:border-indigo-300 dark:text-dark-6">App Development for all screens: </p>
