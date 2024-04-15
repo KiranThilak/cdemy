@@ -57,9 +57,17 @@ const CdemyHome = () => {
 
                     <div className="flex justify-center">
                         <div className="flex flex-wrap">
-                            <NavLink to="/academyhome" className="w-full md:w-1/2 lg:w-1/2 px-4 cursor-pointer">
-                                <div className="mb-10 rounded-xl border-2 border-stroke hover:bg-blue-100 hover:border-indigo-300 bg-white px-8 py-10 shadow-pricing border-indigo-100 sm:p-12 lg:px-6 lg:py-10 xl:p-50px">
-                                <LottieAnimation animationData={codeacademy_animation} />
+                            <NavLink to="/academyhome" className="w-full md:w-1/2 lg:w-1/2 px-4 cursor-pointer flex justify-center items-center">
+                                <div className=" mb-10 rounded-xl border-2 border-stroke hover:bg-blue-100 hover:border-indigo-300 bg-white px-8 py-10 shadow-pricing border-indigo-100 sm:p-12 lg:px-6 lg:py-10 xl:p-50px ">
+                                <div className="flex justify-center"> 
+                                <LottieAnimation
+  animationData={codeacademy_animation}
+  width={300} 
+  height={250}
+
+/></div>
+
+
                                     <span className="block text-lg font-semibold text-primary text-green-600 mb-3">Retraining</span>
                                     <h2 className="text-[30px] font-bold text-indigo-900 mb-5">Code Academy</h2>
                                     <p className="pb-8 border-b border-stroke text-base text-body-color dark:border-indigo-300 dark:text-dark-6">Code- und Projektorientierte Ausbildungen & Weiterbildungen:</p>
@@ -102,7 +110,9 @@ const CdemyHome = () => {
                             </NavLink>
                             <NavLink to="/softwarehome" className="w-full md:w-1/2 lg:w-1/2 px-4 cursor-pointer">
                                 <div className="mb-10 rounded-xl border-2 border-stroke hover:bg-blue-100 hover:border-indigo-300 bg-white px-8 py-10 shadow-pricing border-indigo-100 sm:p-12 lg:px-6 lg:py-10 xl:p-50px">
-                                <LottieAnimation animationData={software_animation} />
+                                <div className="flex justify-center"> 
+                                <LottieAnimation animationData={software_animation}   width={300} 
+  height={250} />    </div>
                                     <span className="block text-lg font-semibold text-primary text-green-600 mb-3">Software</span>
                                     <h2 className="text-[30px] font-bold text-indigo-900 mb-5">Software Development</h2>
                                     <p className="pb-8 border-b border-stroke text-base text-body-color dark:border-indigo-300 dark:text-dark-6">App Development for all screens: </p>

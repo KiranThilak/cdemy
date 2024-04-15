@@ -1,8 +1,7 @@
-
 import React, { useEffect, useRef } from 'react';
 import Lottie from 'lottie-web';
 
-function LottieAnimation({ animationData }) {
+function LottieAnimation({ animationData, className, width, height }) {
   const animationContainer = useRef(null);
 
   useEffect(() => {
@@ -15,16 +14,21 @@ function LottieAnimation({ animationData }) {
       autoplay: true,
     });
 
-    return () => anim.destroy(); // Cleanup animation on unmount
+    return () => anim.destroy(); 
   }, [animationData]);
 
   return (
     <div
       ref={animationContainer}
-      className="w-64 h-64 mx-auto"
+      className={className}
+      style={{ width: width, height: height }}
     />
   );
 }
 
 export default LottieAnimation;
+
+
+
+
 
