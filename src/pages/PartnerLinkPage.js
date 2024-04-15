@@ -3,9 +3,9 @@ import React from 'react';
 const PartnerLinkPage = () => {
     return (
         <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
-        <div className="container mx-auto">
+{/*         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
-       {/*      <div className="w-full px-4 lg:w-6/12">
+             <div className="w-full px-4 lg:w-6/12">
               <div className="flex items-center -mx-3 sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
@@ -34,7 +34,7 @@ const PartnerLinkPage = () => {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div> *
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
@@ -63,7 +63,9 @@ const PartnerLinkPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+                <h1 className='text-3xl font-bold mb-4'>Welcome to PartnerLinkPage</h1>
+
       </section>
     );
 };
