@@ -9,29 +9,29 @@ const ToggleButton = ({ handleButtonClick }) => {
 
 
   const activeButton = pathname.includes("/academyhome")
-    ? "Code Academy"
-    : "Software Development";
+    ? "Code-Akademie"
+    : "Software-Entwicklung";
 
   return (
     <div className="bg-green-200 p-1 rounded-full inline-block">
       <NavLink to="/academyhome">
         <button
           className={`${
-            activeButton === "Code Academy" ? "bg-green-600 text-white " : "text-black"
+            activeButton === "Code-Akademie" ? "bg-green-600 text-white " : "text-black"
           } px-4 py-2 rounded-full mr-2 `}
-          onClick={() => handleButtonClick("Code Academy")}
+          onClick={() => handleButtonClick("Code-Akademie")}
         >
-          Code Academy
+          Code-Akademie
         </button>
       </NavLink>
       <NavLink to="/softwarehome">
         <button
           className={`${
-            activeButton === "Software Development" ? "bg-green-600 text-white" : "text-black"
+            activeButton === "Software-Entwicklung" ? "bg-green-600 text-white" : "text-black"
           } px-4 py-2 rounded-full`}
-          onClick={() => handleButtonClick("Software Development")}
+          onClick={() => handleButtonClick("Software-Entwicklung")}
         >
-          Software Development
+          Software-Entwicklung
         </button>
       </NavLink>
     </div>
