@@ -14,7 +14,8 @@ import SelectionProcessPage from "./pages/SelectionProcessPage";
 import GlidetimeControlPage from "./pages/GlidetimeControlPage";
 import ContactPage from "./pages/ContactPage";
 import PhilosophiePage from "./pages/PhilosophiePage";
-
+import BlogHomePage from "./components/blog/BlogHomePage";
+import BlogPost from "./components/blog/Blogpost";
 function App() {
   return (
     <Router>
@@ -41,7 +42,10 @@ function App() {
             element={<GlidetimeControlPage />}
           />
           <Route path="/philosophiepage" element={<PhilosophiePage />} />
+          <Route path="/bloghomepage" element={<BlogHomePage />} />
+
           <Route path="/contactpage" element={<ContactPage />} />
+          <Route path="/post/:slug" element={<BlogPost />} />
         </Routes>
 
         <Footer />

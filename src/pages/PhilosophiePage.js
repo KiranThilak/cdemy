@@ -6,13 +6,23 @@ const PhilosophiePage = () => {
   return (
     <div>
       <div className="relative overflow-hidden">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="container mx-auto px-4  py-4">
+          <figure className="  relative max-w-5xl mx-auto pt-10">
+            <img
+              className="w-full object-cover h-96 sm:h-[480px]  bg-no-repeat bg-center bg-cover rounded-xl"
+              src={programmierphilosophie}
+              alt="Ein typischer Spätaufsteher"
+            />
+            {/*  <figcaption className="mt-3 text-sm text-center text-gray-500">
+              Ein typischer Spätaufsteher.
+            </figcaption> */}
+          </figure>
           <div className="max-w-2xl text-center mx-auto py-8 ">
             <h1 className="block text-3xl font-bold  text-indigo-900 sm:text-4xl md:text-5xl">
               Unsere Coding-Philosophie
             </h1>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-3 ">
             <p className="text-lg text-black">
               Unsere Herangehensweise bei der{" "}
               <a
@@ -26,17 +36,7 @@ const PhilosophiePage = () => {
               Herangehensweise beruht.
             </p>
           </div>
-          <figure className="mt-10 mb-10 relative max-w-5xl mx-auto">
-            <img
-              className="w-full object-cover h-96 sm:h-[480px]  bg-no-repeat bg-center bg-cover rounded-xl"
-              src={programmierphilosophie}
-              alt="Ein typischer Spätaufsteher"
-            />
-            {/*  <figcaption className="mt-3 text-sm text-center text-gray-500">
-              Ein typischer Spätaufsteher.
-            </figcaption> */}
-          </figure>
-          <div className="space-y-3">
+          <div className="space-y-3 py-3">
             <p className="text-lg text-black">
               Unser wichtigstes Ziel ist, dass die Fachinformatiker für
               Anwendungs­entwicklung, die wir ausbilden, im Anschluss produktiv

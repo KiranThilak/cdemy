@@ -1,6 +1,5 @@
 import React from "react";
 
-import Spätaufsteher from "../assets/images/typischer-Spätaufsteher.jpg";
 import auswahlverfahren from "../assets/images/auswahlverfahren.jpg";
 
 const SelectionProcessPage = () => {
@@ -14,11 +13,8 @@ const SelectionProcessPage = () => {
               src={auswahlverfahren}
               alt="Ein typischer Spätaufsteher"
             />
-            {/*    <figcaption className="mt-3 text-sm text-center text-gray-500">
-              Ein typischer Spätaufsteher.
-            </figcaption> */}
           </figure>
-          <div className="max-w-2xl text-center mx-auto pt-10">
+          <div className="max-w-xl text-center mx-auto pt-10">
             <h1 className="block text-4xl font-bold  text-indigo-900 sm:text-4xl md:text-5xl">
               Unser Auswahl­verfahren
             </h1>
@@ -30,7 +26,7 @@ const SelectionProcessPage = () => {
         {/* Content */}
         <div className="space-y-5 md:space-y-8">
           <div className="space-y-3">
-            <p className="text-2xl text-black">
+            <p className="text-xl text-black">
               Unser erster Antrieb ist, effizient an Projekten zu arbeiten.
               Daher begrenzen wir die Klassengröße auf eine handhabe, kleine
               Gruppe (12 Personen). Und zugleich wollen wir sicherstellen, dass
@@ -38,7 +34,7 @@ const SelectionProcessPage = () => {
               gelingen und misslingen vor allem auf grund eines richtig oder
               falsch zusammengestellten Teams.
             </p>
-            <p className="text-2xl text-black">
+            <p className="text-xl text-black">
               Daher haben wir speziell für die{" "}
               <a
                 className="text-green-600 decoration-2 hover:underline font-medium "
@@ -54,7 +50,7 @@ const SelectionProcessPage = () => {
           <div></div>
 
           <div className="space-y-3">
-            <ol className="list-decimal list-outside space-y-5 ps-5 text-2xl text-black">
+            <ol className="list-decimal list-outside space-y-5 ps-5 text-xl text-black">
               <li className="ps-2">
                 {" "}
                 Der /die Teilnehmer:in liest unsere Datenschutzhinweise und
@@ -84,7 +80,7 @@ const SelectionProcessPage = () => {
             </ol>
           </div>
 
-          <ul className="list-disc list-outside space-y-5 ps-8 text-2xl text-black">
+          <ul className="list-disc list-outside space-y-5 ps-8 text-xl text-black">
             <li className="ps-2">
               Garantierte Zulassung: Sollte die Finanzierung sich vor Beginn des
               Kurses klären lassen, dann ist die Zulassung jetzt schon sicher.
@@ -94,7 +90,7 @@ const SelectionProcessPage = () => {
               zuerst kommt, malt zuerst".
             </li>
           </ul>
-          <ul className="list-disc list-outside space-y-5 ps-8 text-2xl text-black">
+          <ul className="list-disc list-outside space-y-5 ps-8 text-xl text-black">
             <li className="ps-2">
               Möglicher Nachrücker: Sollten aufgrund von Verzögerungen kurz vor
               Ende der Zulassungszeit noch Plätze frei sein, kommen wir auf Dich
@@ -112,7 +108,7 @@ const SelectionProcessPage = () => {
               Soll ich mich vorbereiten?
             </h3>
 
-            <p className="text-2xl text-black">
+            <p className="text-xl text-black">
               Nein, das hat keinen Zweck. Der Test ist zu breit angelegt. Wir
               glauben nicht, dass man sich großartig auf ihn vorbereiten kann.
             </p>
@@ -122,7 +118,7 @@ const SelectionProcessPage = () => {
               Ist der Test auf Deutsch oder auf Englisch?
             </h3>
 
-            <p className="text-2xl text-black">
+            <p className="text-xl text-black">
               Beides. Da Deutsch und Englisch bei uns beides Unterrichtsprachen
               sind, setzen wir die Beherrschung beider Sprachen voraus.
             </p>
@@ -132,7 +128,7 @@ const SelectionProcessPage = () => {
               Kann ich schummeln und nebenher googeln?
             </h3>
 
-            <p className="text-2xl text-black">
+            <p className="text-xl text-black">
               Natürlich. Der Test ist aber so angelegt, dass das nicht viel
               bringt. Und ein wenig ist es so, dass richtiges Recherchieren
               online ja auch eine Qualität ist, die zu haben nicht schadet.

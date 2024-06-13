@@ -1,0 +1,36 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "file": "Kanuausflug.mdx",
+      "title": "Kanuausflug",
+      "category": "Retrainin",
+      "image": "/blog/images/leuchtturm.jpg",
+      "date": "08.06.2023"
+    },
+    {
+      "id": 2,
+      "file": "Unser Leitbild.mdx",
+      "category": "Retraining",
+      "title": "Unser Leitbild",
+      "image": "/blog/images/Kanuausflug.jpg",
+      "date": "08.06.2023"
+    },
+    {
+      "id": 3,
+      "category": "Retraining",
+      "file": "Objektorientierte Programmierung.mdx",
+      "title": "Objektorientierte Programmierung",
+      "image": "/blog/images/leuchtturm.jpg",
+      "date": "08.06.2023"
+    },
+    {
+      "id": 4,
+      "file": "Installationsanleitung.mdx",
+      "category": "Tutorials",
+      "title": "Installationsanleitung",
+      "image": "/blog/images/Kanuausflug.jpg",
+      "date": "08.06.2023"
+    }
+  ]
+}

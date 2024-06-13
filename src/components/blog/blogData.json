@@ -1,0 +1,36 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "file": "Kanuausflug.mdx",
+      "title": "Kanuausflug",
+      "category": "UMSCHULUNG",
+      "image": "/blog/images/academy-blogs-images/academy_kanuausflug/banner.jpg",
+      "date": "08.06.2023"
+    },
+    {
+      "id": 2,
+      "file": "Unser Leitbild.mdx",
+      "category": "LEITBILD",
+      "title": "Unser Leitbild",
+      "image": "/blog/images/academy-blogs-images/cdemy_unternehmensleitbild/leuchtturm.jpg",
+      "date": "08.06.2023"
+    },
+    {
+      "id": 3,
+      "file": "Objektorientierte Programmierung.mdx",
+      "category": "PROGRAMMIERUNG",
+      "title": "Objektorientierte Programmierung",
+      "image": "/blog/images/academy-blogs-images/tutorial_objektorientierte_programmierung_praktisch/matrix.jpg",
+      "date": "08.06.2023"
+    },
+    {
+      "id": 4,
+      "file": "Installationsanleitung.mdx",
+      "category": "PROGRAMMIERUNG",
+      "title": "Installationsanleitung",
+      "image": "/blog/images/academy-blogs-images/tutorial_installation/software_640.jpg",
+      "date": "08.06.2023"
+    }
+  ]
+}

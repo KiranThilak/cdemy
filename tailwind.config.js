@@ -1,17 +1,15 @@
 // tailwind.config.js
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Open Sans', 'Roboto', 'sans-serif'],
+        sans: ["Open Sans", "Roboto", "sans-serif", "Monrope"],
       },
       colors: {
-        customgreen: '#70AF91',
-        custompurple: '#36747d',
+        customgreen: "#70AF91",
+        custompurple: "#36747d",
       },
     },
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+C;
 import academyIcon from "../assets/images/icons8-teaching-100.png";
 import softwareIcon from "../assets/images/icons8-code-64.png";
 

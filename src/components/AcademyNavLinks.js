@@ -111,28 +111,31 @@ const AcademyNavLinks = ({ isOpen }) => {
               {/* Different content for offers dropdown */}
               <NavLink
                 to="/externalexaminationpage"
-                className="block px-4 py-2 text-black hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap"
+                className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap"
               >
                 External examination for IT specialists
               </NavLink>
               <NavLink
                 to="/glossarypage"
-                className="block px-4 py-2 text-black hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap"
+                className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap"
               >
                 Glossary
               </NavLink>
             </AcademyDropdown>
           </NavLink>
-          <NavLink to="/academyblog">
+          <NavLink to="/bloghomepage">
             <AcademyDropdown
               dropdownName="blog"
               isOpen={dropdownStates.blog}
               openDropdown={openDropdown}
               closeDropdown={closeDropdown}
             >
-              {/* Different content for Blog dropdown */}
-              {/*  <NavLink to="" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 5</NavLink>
-                        <NavLink to="" className="block px-4 py-2 text-black hover:bg-green-600 hover:text-white cursor-pointer rounded-md whitespace-nowrap">Item 6</NavLink> */}
+              <NavLink
+                to="/bloghomepage"
+                className="block px-4 py-2 text-indigo-900 hover:bg-indigo-900 hover:text-white cursor-pointer rounded-md whitespace-nowrap"
+              >
+                Academy Blogs
+              </NavLink>
             </AcademyDropdown>
           </NavLink>
 
