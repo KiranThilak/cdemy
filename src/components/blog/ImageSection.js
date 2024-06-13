@@ -1,6 +1,5 @@
 // ImageSection.js
 import React from "react";
-import image3 from "";
 
 const ImageSection = ({ image1, image2 }) => {
   return (
