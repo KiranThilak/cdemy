@@ -40,7 +40,7 @@ const PartnerLinkPage = () => {
                   <li className="ps-2">
                     <a
                       className="text-green-600 decoration-2 hover:underline font-medium "
-                      href="#"
+                      href="https://inventarkreisel.de/"
                     >
                       Inventarkreisel, der Möbel-Lieferant für schlaue
                       Unternehmer
@@ -49,7 +49,7 @@ const PartnerLinkPage = () => {
                   <li className="ps-2">
                     <a
                       className="text-green-600 decoration-2 hover:underline font-medium "
-                      href="#"
+                      href="https://www.facebook.com/MAMPhotographie/"
                     >
                       M-A-M Photo, unser Partner für Fotografie und Layouts
                     </a>
@@ -64,7 +64,7 @@ const PartnerLinkPage = () => {
                   <li className="ps-2">
                     <a
                       className="text-green-600 decoration-2 hover:underline font-medium "
-                      href="#"
+                      href="https://ihk-kassel.de/"
                     >
                       Industrie- und Handelskammer Kassel-Marburg
                     </a>
@@ -72,7 +72,7 @@ const PartnerLinkPage = () => {
                   <li className="ps-2">
                     <a
                       className="text-green-600 decoration-2 hover:underline font-medium "
-                      href="#"
+                      href="https://www.industriepark-kassel.de/"
                     >
                       Netzwerk Industriepark Kassel
                     </a>
