@@ -57,15 +57,15 @@ const CdemyHome = () => {
         <div className="container mx-auto">
           <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
             <span className="mb-2 block text-lg font-semibold text-primary text-green-600">
-              Our Services
+              Unsere Dienstleistungen
             </span>
             <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark text-indigo-900 sm:text-4xl md:text-[40px]">
-              What We Offer
+              Was wir anbieten
             </h2>
             <p className="text-lg text-body-color dark:text-dark-6">
-              At Cdemy GmbH, we specialize in retraining for application
-              development and offer software solutions for all screens using
-              Flutter and React.
+              Wir von der Cdemy GmbH sind auf Umschulungen zur
+              Anwendungsentwicklung spezialisiert und bieten Softwarelösungen
+              für alle Screens mittels Flutter und React an.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ const CdemyHome = () => {
                   </div>
 
                   <span className="block text-lg font-semibold text-primary text-green-600 mb-3">
-                    Retraining
+                    Umschulung
                   </span>
                   <h2 className="text-[30px] font-bold text-indigo-900 mb-5">
                     Code-Akademie
@@ -181,7 +181,7 @@ const CdemyHome = () => {
                     Software-Entwicklung
                   </h2>
                   <p className="pb-8 border-b border-stroke text-lg text-body-color dark:border-indigo-300 dark:text-dark-6">
-                    App Development for all screens:{" "}
+                    App-Entwicklung für alle Bildschirme:
                   </p>
                   <p>&nbsp;</p>
                   <p>&nbsp;</p>
@@ -201,7 +201,7 @@ const CdemyHome = () => {
                           <path d="M22 4L12 14.01l-3-3"></path>
                         </svg>
                         <span className="title-font font-medium">
-                          Mobile App Development with Fluttur
+                          Mobile App-Entwicklung mit Fluttur
                         </span>
                       </div>
                     </div>
@@ -220,7 +220,7 @@ const CdemyHome = () => {
                           <path d="M22 4L12 14.01l-3-3"></path>
                         </svg>
                         <span className="title-font font-medium">
-                          Web App Development with ReactJS
+                          Web-App-Entwicklung mit ReactJS
                         </span>
                       </div>
                     </div>
@@ -240,7 +240,7 @@ const CdemyHome = () => {
                         </svg>
 
                         <span className="title-font font-medium">
-                          Desktop App Development with Flutter
+                          Desktop-App-Entwicklung mit Flutter
                         </span>
                       </div>
                       <span>&nbsp;</span>
