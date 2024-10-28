@@ -1,25 +1,19 @@
+// ToggleButton.js
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
-const ToggleButton = ({ handleButtonClick }) => {
-  const location = useLocation();
-
-
-  const { pathname } = location;
-
-
-  const activeButton = pathname.includes("/academyhome")
-    ? "Code-Akademie"
-    : "Software-Entwicklung";
+const ToggleButton = () => {
+  const { pathname } = useLocation();
 
   return (
-    <div className="bg-green-200 p-1 rounded-full inline-block">
+    <div className="bg-green-300 p-1 rounded-full inline-block">
       <NavLink to="/academyhome">
         <button
           className={`${
-            activeButton === "Code-Akademie" ? "bg-green-600 text-white " : "text-black"
-          } px-4 py-2 rounded-full mr-2 `}
-          onClick={() => handleButtonClick("Code-Akademie")}
+            pathname.includes("/academyhome")
+              ? "bg-green-600 text-white"
+              : "text-gray-800"
+          } px-4 py-2 rounded-full mr-2 hover:bg-green-600 hover:text-white transition-colors duration-200`}
         >
           Code-Akademie
         </button>
@@ -27,9 +21,10 @@ const ToggleButton = ({ handleButtonClick }) => {
       <NavLink to="/softwarehome">
         <button
           className={`${
-            activeButton === "Software-Entwicklung" ? "bg-green-600 text-white" : "text-black"
-          } px-4 py-2 rounded-full`}
-          onClick={() => handleButtonClick("Software-Entwicklung")}
+            pathname.includes("/softwarehome")
+              ? "bg-green-600 text-white"
+              : "text-gray-800"
+          } px-4 py-2 rounded-full hover:bg-green-600 hover:text-white transition-colors duration-200`}
         >
           Software-Entwicklung
         </button>
@@ -39,9 +34,3 @@ const ToggleButton = ({ handleButtonClick }) => {
 };
 
 export default ToggleButton;
-
-
-
-
-
-

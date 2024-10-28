@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // Import NavLink component from react-router-dom
+import { NavLink } from "react-router-dom";
 
 const AcademyNavLinks = ({ isOpen }) => {
   const [dropdownStates, setDropdownStates] = useState({

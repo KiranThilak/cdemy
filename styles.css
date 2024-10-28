@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: green;
+  padding-left: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+.toggle-container {
+  overflow: hidden;
+  border: 1px solid green;
+  border-radius: 1rem;
+  font-size: 0;
+}
+
+.toggle-container a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.toggle-container .toggle.active {
+  color: #fff;
+  background-color: green;
+}
+
+nav {
+  background-color: aliceblue;
+  color: white;
+  padding: 10px 50px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.menuItem {
+  margin-right: 100px;
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+}
+
+.contact-btn {
+  background-color: green;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.contact-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-btn:hover {
+  background-color: darkgreen;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link,
+.drop-down li {
+  list-style: none;
+  height: 100%;
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.drop-down {
+  position: absolute;
+  padding: 0.5rem 0;
+  margin: 0.5rem -0.5rem;
+  background: aliceblue;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  font-size: 12px;
+  display: none;
+  width: 200px;
+}
+
+.nav-link:hover {
+  background-color: green;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.dropdown-container:hover .drop-down {
+  display: block;
+}
+
+.dropdown-container .dropdown-icon {
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
+  font-size: 14px;
+  bottom: 1px;
+  left: 3px;
+}
+
+.dropdown-container:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+  background: green;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.drop-down a:hover {
+  color: white;
+}
